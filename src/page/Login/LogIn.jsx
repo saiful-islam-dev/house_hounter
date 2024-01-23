@@ -1,6 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import { Link } from "react-router-dom";
 import { useRef } from "react";
+import { FcGoogle } from "react-icons/fc";
 
 const LogIn = () => {
   const emailRef = useRef();
@@ -11,6 +12,9 @@ const LogIn = () => {
     const password = event.target.password.value;
     console.log({ email, password });
   };
+
+  const handleReset = () => {};
+  const handleGoogleSignIn = () => {};
 
   return (
     <div className="flex justify-center items-center min-h-screen">
@@ -76,13 +80,13 @@ const LogIn = () => {
         </form>
         <div className="space-y-1">
           <button
-            // onClick={handleReset}
+            onClick={handleReset}
             className="text-xs hover:underline hover:text-rose-500 text-gray-400 pt-6"
           >
             Forgot password?
           </button>
         </div>
-        {/* <div className="flex items-center pt-4 space-x-1">
+        <div className="flex items-center pt-4 space-x-1">
           <div className="flex-1 h-px sm:w-16 dark:bg-gray-700"></div>
           <p className="px-3 text-sm dark:text-gray-400">
             Login with social accounts
@@ -90,13 +94,13 @@ const LogIn = () => {
           <div className="flex-1 h-px sm:w-16 dark:bg-gray-700"></div>
         </div>
         <div
-            onClick={handleGoogleSignIn}
+          onClick={handleGoogleSignIn}
           className="flex justify-center items-center space-x-2 border m-3 p-2 border-gray-300 border-rounded cursor-pointer"
         >
           <FcGoogle size={32} />
 
           <p>Continue with Google</p>
-        </div> */}
+        </div>
         <p className="px-6 text-sm text-center text-gray-400">
           Don't have an account yet?{" "}
           <Link
