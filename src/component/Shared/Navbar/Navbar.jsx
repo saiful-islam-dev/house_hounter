@@ -9,8 +9,8 @@ const Navbar = () => {
           to="/"
           className={({ isActive }) =>
             isActive
-              ? "font-medium tracking-wide text-pink-400 transition-colors duration-200"
-              : "font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-pink-400"
+              ? "font-medium tracking-wide text-rose-500 transition-colors duration-200"
+              : "font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-rose-500"
           }
         >
           Home
@@ -21,7 +21,7 @@ const Navbar = () => {
           to="/alltoys"
           className={({ isActive }) => (isActive ? "active" : "default")}
         >
-          All Toys
+          Rent
         </NavLink>
       </li>
 
@@ -30,7 +30,7 @@ const Navbar = () => {
           to="/blog"
           className={({ isActive }) => (isActive ? "active" : "default")}
         >
-          Blogs
+          Share Home
         </NavLink>
       </li>
     </>
@@ -64,8 +64,8 @@ const Navbar = () => {
               {navOption}
             </ul>
           </div>
-          <Link className="normal-case text-xl flex items-center ">
-            House Henter
+          <Link className="normal-case flex items-center ">
+            <span className="font-bold text-2xl">House Henter</span>
           </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
@@ -84,11 +84,11 @@ const Navbar = () => {
               </button>
             </div>
           ) : ( */}
-          <Link
-            to="/login"
-            className="hover:underline hover:text-rose-500 text-gray-600"
-          >
+          <Link to="/login" className="btns-primary">
             Login
+          </Link>
+          <Link to="/signup" className="btns-primary">
+            Sign Up
           </Link>
           {/* )} */}
         </div>

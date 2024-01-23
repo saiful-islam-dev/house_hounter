@@ -12,16 +12,13 @@ const Footers = () => {
     <div>
       <footer className="footer p-10 bg-base-200 text-base-content rounded-t-xl">
         <div>
-          <Link className="normal-case text-xl flex items-center gap-1">
-            <div className="bg-pink-400 p-3 rounded-full">
-              {/* <img className="w-7" src={logo} alt="" /> */}
-            </div>
+          <Link to="/" className="normal-case text-xl flex items-center gap-1">
             <span className="text-4xl text-slate-700 font-mono font-bold">
-              Learn<span className="text-yellow-400">IQ</span>
+              House Hubter
             </span>
           </Link>
           <p>
-            Learn IQ Industries Ltd.
+            House Hunter is a platform reant home
             <br />
             Providing reliable tech since 1992
           </p>
@@ -41,18 +38,24 @@ const Footers = () => {
           </div>
         </div>
         <div>
-          <span className="footer-title">Services</span>
-          <a className="link link-hover">Branding</a>
-          <a className="link link-hover">Design</a>
-          <a className="link link-hover">Marketing</a>
-          <a className="link link-hover">Advertisement</a>
+          <span className="footer-title">RESOURCES</span>
+          <a className="link link-hover">Blog</a>
+          <a className="link link-hover">How To</a>
+          <a className="link link-hover">Help</a>
         </div>
         <div>
-          <span className="footer-title">Home</span>
-          <a className="link link-hover">All Toys</a>
-          <a className="link link-hover">Contact</a>
-          <a className="link link-hover">Blogs</a>
-          <a className="link link-hover">Press kit</a>
+          <span className="footer-title">MARKETPLACES</span>
+          <a className="link link-hover">Apartments.com</a>
+          <a className="link link-hover">ApartmentFinder.com</a>
+          <a className="link link-hover">ApartmentHomeLiving.com</a>
+          <a className="link link-hover">LoopNet.com</a>
+        </div>
+        <div>
+          <span className="footer-title">LEGAL</span>
+          <a className="link link-hover">Terms of Use</a>
+          <a className="link link-hover">Privacy Policy</a>
+          <a className="link link-hover">Accessibility</a>
+          <a className="link link-hover">California Privacy Notice</a>
         </div>
         <div>
           <span className="footer-title">Newsletter</span>
@@ -66,7 +69,7 @@ const Footers = () => {
                 placeholder="username@site.com"
                 className="input input-bordered w-full pr-16"
               />
-              <button className="btn bg-pink-600 absolute top-0 right-0 rounded-l-none">
+              <button className="btn bg-rose-600 absolute top-0 right-0 rounded-l-none">
                 Subscribe
               </button>
             </div>
