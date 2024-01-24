@@ -18,7 +18,7 @@ const Navbar = () => {
       </li>
       <li>
         <NavLink
-          to="/alltoys"
+          to="/rent"
           className={({ isActive }) => (isActive ? "active" : "default")}
         >
           Rent
@@ -27,7 +27,7 @@ const Navbar = () => {
 
       <li>
         <NavLink
-          to="/blog"
+          to="/share_home"
           className={({ isActive }) => (isActive ? "active" : "default")}
         >
           Share Home
